@@ -20,22 +20,19 @@ npm run build
 To run the sample questions:
 
 ```
-npm run start -- --file "./data/questions.json"
+npm run sample"
 ```
 
 For the command line options:
 
 ```
-npm run start -- --help
+node ./dist/app.js --help
 ```
 
 Upon completion, a report is displayed along with any incorrect
 responses.
 
 ```
-❯ npm run start -- --file "./data/questions.json" --samples 5
-
-> quizlet@0.0.1 start C:\Users\larry\source\personal\quizlet
 > node ./dist/app.js "--file" "./data/questions.json" "--samples" "5"
 
 Sample Flashcards, version 1
@@ -50,4 +47,3 @@ Score is 4/5: 80%
 
 [x] Default port for SMTP? 999 (25)
 ```
-
