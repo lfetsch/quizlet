@@ -13,7 +13,8 @@ export class App {
             .option("file", {
                 alias: "f",
                 description: "File that contains the questions",
-                type: "string"
+                type: "string",
+                demandOption: true
             })
             .option("tags", {
                 alias: "t",
@@ -25,7 +26,6 @@ export class App {
                 description: "Take a sample from the question set",
                 type: "number"
             })
-            .demandOption(["file"])
             .example([
                 ["$0", "Run through all questions"],
                 ["$0 --file \"./data/questions.json\" --samples 3", "Take a sample of three questions"],
